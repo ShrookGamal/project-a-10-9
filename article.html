@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مقالات مطابخ ودرايش الروابي</title>
+<meta name="description" content="مقالات ونصائح في تفصيل المطابخ والأبواب والدرايش والليكسان والزجاج والصيانة في حي الروابي الرياض.">
+<meta name="theme-color" content="#0e3b3c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--d:#0e3b3c;--d2:#176063;--g:#c9a24b;--g2:#f0d68a}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:90px;overflow-x:hidden;-webkit-text-size-adjust:100%}
+body{font-family:'Tajawal',sans-serif;background:#f6f1e6;color:#1f3536;line-height:2;overflow-x:hidden;width:100%;min-height:100vh}
+a{text-decoration:none;color:inherit}
+svg{width:20px;height:20px;fill:currentColor}
+
+.prog{position:fixed;top:0;right:0;height:4px;width:0;z-index:100;background:linear-gradient(90deg,var(--g),var(--g2))}
+.ah{position:fixed;top:0;right:0;left:0;z-index:90;display:flex;align-items:center;justify-content:space-between;gap:10px;height:calc(66px + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) 18px 0;background:rgba(9,42,43,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,162,75,.3);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.aback{display:inline-flex;align-items:center;gap:6px;padding:5px 16px;border-radius:30px;font-size:14px;font-weight:800;color:var(--d);background:linear-gradient(135deg,var(--g2),var(--g));transition:.3s;flex-shrink:0}
+.aback:hover{transform:translateX(4px);box-shadow:0 8px 18px rgba(0,0,0,.3)}
+.abrand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:17px;color:var(--g2)}
+.abrand svg{width:38px;height:38px;fill:none;filter:drop-shadow(0 4px 10px rgba(201,162,75,.45))}
+
+.ahero{position:relative;overflow:hidden;text-align:center;color:#fff;padding:calc(120px + env(safe-area-inset-top,0px)) 22px 130px;background:radial-gradient(circle at 50% 30%,var(--d2),var(--d) 75%)}
+.ahero::before{content:"";position:absolute;inset:0;opacity:.4;background-image:radial-gradient(rgba(240,214,138,.4) 1.2px,transparent 1.2px);background-size:32px 32px}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.25;animation:float 12s ease-in-out infinite}
+.o1{width:260px;height:260px;background:var(--g);top:5%;right:-80px}
+.o2{width:240px;height:240px;background:#2aa3a0;bottom:0;left:-70px;animation-delay:-4s}
+.ahin{position:relative;z-index:2;max-width:880px;margin:0 auto;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.acat{display:inline-block;background:rgba(201,162,75,.18);border:1px solid rgba(201,162,75,.5);color:var(--g2);padding:4px 22px;border-radius:30px;font-weight:800;font-size:14px;margin-bottom:16px}
+.ahero h1{font-size:clamp(26px,5.4vw,46px);line-height:1.6;font-weight:800;margin-bottom:16px;text-shadow:0 6px 24px rgba(0,0,0,.35)}
+.adesc{max-width:720px;margin:0 auto 20px;font-size:clamp(15px,2.5vw,18px);opacity:.92}
+.ameta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.ameta span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);padding:2px 16px;border-radius:30px;font-size:13.5px}
+
+.awrap{position:relative;z-index:3;max-width:1150px;margin:-72px auto 0;padding:0 22px 70px}
+.acover{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:21/9;overflow:hidden;font-size:90px;border-radius:30px;border:6px solid #fff;background:linear-gradient(135deg,#dcebea,#f6ecd2);box-shadow:0 30px 60px rgba(14,59,60,.28)}
+.acover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.agrid{display:grid;grid-template-columns:1fr 320px;gap:30px;margin-top:34px;align-items:start}
+.abody{background:#fff;border-radius:30px;padding:42px 40px;border:1px solid rgba(201,162,75,.35);box-shadow:0 20px 44px rgba(14,59,60,.1)}
+.alead{font-size:18px;font-weight:500;color:#2c4547;padding:12px 20px;border-right:5px solid var(--g);border-radius:18px;background:#faf6ee}
+.asec{margin-top:38px}
+.asec h2{display:flex;align-items:center;gap:12px;font-size:clamp(20px,3.4vw,27px);line-height:1.6;color:var(--d);margin-bottom:12px}
+.asec h2 i{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:18px;border-radius:12px;color:var(--d);background:linear-gradient(135deg,var(--g2),var(--g));box-shadow:0 8px 18px rgba(201,162,75,.4)}
+.asec p{font-size:16.5px;color:#3b4d4f;margin-bottom:14px}
+.asec strong{color:var(--d2)}
+.alist{list-style:none;display:grid;gap:8px;margin:14px 0}
+.alist li{position:relative;padding:6px 42px 6px 14px;background:#faf6ee;border:1px solid rgba(201,162,75,.32);border-radius:14px;font-size:15.5px;font-weight:500;transition:.3s}
+.alist li:hover{transform:translateX(-4px);background:#fff}
+.alist li::before{content:"✔";position:absolute;right:14px;top:6px;color:var(--g)}
+.atip{margin:20px 0;padding:16px 22px;border-radius:22px;color:#fff;background:linear-gradient(135deg,var(--d),var(--d2));border-right:5px solid var(--g);box-shadow:0 14px 30px rgba(14,59,60,.25)}
+.atip b{display:block;color:var(--g2);font-size:16px}
+.atip p{color:#fff!important;margin:2px 0 0!important;font-size:15.5px!important;opacity:.95}
+.afaq{margin-top:44px;padding-top:10px;border-top:2px dashed rgba(201,162,75,.5)}
+.afaq h2{font-size:clamp(21px,3.4vw,27px);color:var(--d);margin:16px 0 14px}
+details{margin-bottom:10px;border-radius:18px;background:#faf6ee;border:1px solid rgba(201,162,75,.35);overflow:hidden}
+summary{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;list-style:none;padding:10px 18px;font-weight:800;color:var(--d);font-size:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex-shrink:0;font-size:24px;line-height:1;color:var(--g)}
+details[open] summary::after{content:"−"}
+details[open]{background:#fff;box-shadow:0 10px 24px rgba(14,59,60,.1)}
+details p{padding:0 18px 14px;font-size:15.5px;color:#3b4d4f}
+.atags{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px;padding-top:20px;border-top:2px dashed rgba(201,162,75,.5)}
+.atags b{width:100%;color:var(--d)}
+.atags span{padding:1px 14px;border-radius:30px;font-size:13px;color:var(--d2);background:#faf6ee;border:1px solid rgba(201,162,75,.5);transition:.3s}
+.atags span:hover{background:linear-gradient(135deg,var(--g2),var(--g));color:var(--d)}
+
+.aside{position:sticky;top:88px;display:grid;gap:18px}
+.acard{padding:22px 20px;border-radius:26px;color:#fff;background:linear-gradient(160deg,var(--d),var(--d2));border:1px solid rgba(240,214,138,.4);box-shadow:0 20px 40px rgba(14,59,60,.25)}
+.acard h3{font-size:19px;color:var(--g2);margin-bottom:8px}
+.atoc a{display:flex;align-items:flex-start;gap:10px;padding:5px 8px;border-radius:12px;font-size:14.5px;line-height:1.7;transition:.3s}
+.atoc a:hover{background:rgba(255,255,255,.12);color:var(--g2)}
+.atoc b{flex-shrink:0;width:24px;height:24px;margin-top:2px;border-radius:50%;text-align:center;line-height:24px;font-size:13px;color:var(--d);background:var(--g)}
+.acontact p{font-size:14.5px;line-height:1.9;opacity:.92;margin-bottom:12px}
+.abtn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 26px;border-radius:40px;font-weight:800;font-size:15px;color:var(--d);background:linear-gradient(135deg,var(--g2),var(--g));transition:.35s;width:100%}
+.abtn::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:sweep 3.5s infinite}
+.abtn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.3)}
+
+.arel{margin-top:50px}
+.arel>h2{font-size:clamp(22px,3.6vw,30px);color:var(--d);margin-bottom:18px;text-align:center}
+.relgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rel{display:flex;align-items:center;gap:16px;padding:18px;border-radius:26px;background:#fff;border:1px solid rgba(201,162,75,.4);box-shadow:0 14px 34px rgba(14,59,60,.1);transition:.4s}
+.rel:hover{transform:translateY(-6px);box-shadow:0 24px 46px rgba(14,59,60,.2)}
+.rel i{flex-shrink:0;width:64px;height:64px;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:32px;border-radius:20px;background:linear-gradient(135deg,var(--g2),var(--g))}
+.rel small{color:var(--d2);font-weight:800}
+.rel h3{font-size:16.5px;line-height:1.7;color:var(--d)}
+.acta{margin-top:40px;padding:34px 26px;text-align:center;color:#fff;border-radius:30px;background:linear-gradient(135deg,var(--d),var(--d2));border-bottom:4px solid var(--g);box-shadow:0 22px 46px rgba(14,59,60,.3)}
+.acta h2{font-size:clamp(21px,3.6vw,29px);margin-bottom:6px}
+.acta p{opacity:.92;margin-bottom:18px}
+.acta .abtn{width:auto}
+.afoot{padding:26px 20px;text-align:center;font-size:14px;color:#fff;background:#08292a}
+.afoot a{color:var(--g2);font-weight:700}
+
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translate(20px,-30px) scale(1.15)}}
+@keyframes sweep{to{left:130%}}
+
+@media(max-width:900px){
+.agrid{grid-template-columns:1fr}
+.aside{position:static;order:-1}
+.acontact{display:none}
+.abody{padding:28px 20px;border-radius:26px}
+.relgrid{grid-template-columns:1fr}
+.awrap{padding:0 16px 60px}
+}
+@media(max-width:600px){
+.abrand{font-size:15px}
+.abrand svg{width:34px;height:34px}
+.aback{padding:4px 12px;font-size:13px}
+.acover{aspect-ratio:16/10;font-size:64px;border-width:4px;border-radius:24px}
+.alead{font-size:16.5px}
+.asec p{font-size:16px}
+.acta .abtn{width:100%}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="0 0 56 56">
+<defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d68a"/><stop offset="1" stop-color="#b88a2e"/></linearGradient></defs>
+<rect x="2" y="2" width="52" height="52" rx="16" fill="url(#lg)"/>
+<path d="M11 45V22l17-11 17 11v23" fill="none" stroke="#0e3b3c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17" y="27" width="10" height="18" rx="1.5" fill="#0e3b3c"/>
+<circle cx="24.5" cy="37" r="1.2" fill="#f0d68a"/>
+<rect x="31" y="27" width="9" height="9" rx="1.5" fill="none" stroke="#0e3b3c" stroke-width="2.4"/>
+<path d="M35.5 27v9M31 31.5h9" stroke="#0e3b3c" stroke-width="1.6"/>
+<rect x="31" y="39" width="9" height="6" rx="1.2" fill="#0e3b3c"/>
+<path d="M7 45h42" stroke="#0e3b3c" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+</svg>
+
+<div class="prog" id="prog"></div>
+
+<header class="ah">
+<a class="aback" href="index.html#blog" aria-label="العودة للرئيسية"><span>→</span> العودة للرئيسية</a>
+<a class="abrand" href="index.html"><svg><use href="#logo"/></svg><span>مطابخ ودرايش الروابي</span></a>
+</header>
+
+<main id="app"></main>
+
+<footer class="afoot">© جميع الحقوق محفوظة · <a href="index.html">مطابخ ودرايش الروابي</a> · حي الروابي، الرياض · <a href="tel:+966591007651" dir="ltr">0591007651</a></footer>
+
+<script>
+(function(){
+var D={
+1:{
+cat:'مطابخ',icon:'🍳',date:'15 سبتمبر 2026',read:'9 دقائق',
+title:'تفصيل مطبخ في الرياض: دليلك لاختيار مطبخ ألمنيوم أو خشب أو مودرن',
+desc:'دليل شامل لتفصيل المطابخ في الرياض وحي الروابي: الفرق بين مطابخ الألمنيوم والخشب والمودرن، الخامات، الرخام والكوارتز، أشكال المطابخ، والأخطاء الشائعة قبل التنفيذ.',
+alt:'تفصيل مطبخ ألمنيوم ومطبخ خشب مودرن في الرياض',
+intro:'المطبخ هو القلب النابض للبيت، وفيه نقضي ساعات طويلة كل يوم، ولذلك فاختيار نوعه وخامته وتصميمه قرار مهم لا يصح أن يتم على عجل. في هذا الدليل نشرح لك بالتفصيل كل ما تحتاج معرفته عن <strong>تفصيل المطابخ في الرياض</strong>، من الفرق بين <strong>مطبخ الألمنيوم</strong> و<strong>مطبخ الخشب</strong> و<strong>المطبخ المودرن</strong>، إلى أنواع الأسطح والإكسسوارات وخطوات التنفيذ، بخبرة فريق <strong>مطابخ ودرايش الروابي</strong> في <strong>حي الروابي</strong>.',
+s:[
+{h:'لماذا تفصيل المطبخ أفضل من المطبخ الجاهز؟',
+p:['المطبخ الجاهز يأتي بمقاسات ثابتة، وغالباً لا تتطابق مع مساحة مطبخك الحقيقية، فتجد فراغات مهدرة أو زوايا لا يمكن استغلالها. أما <strong>تفصيل المطبخ</strong> فيبدأ بقياس دقيق للمكان، ثم يُصمم كل جزء ليناسب المساحة وعدد أفراد الأسرة وطريقة استخدامك اليومية.','كما أن التفصيل يمنحك حرية اختيار اللون والخامة ونوع الأدراج ومكان الأجهزة والتمديدات، بحيث يخرج المطبخ كأنه صُنع لك أنت وحدك، وبسعر واضح تعرفه من البداية.'],
+ul:['استغلال كامل للمساحة حتى الزوايا الصعبة','اختيار الخامة واللون والتصميم بحرية تامة','حساب أماكن الغاز والتمديدات والأجهزة مسبقاً','جودة أعلى في التفاصيل والمفصلات والأدراج','ضمان وخدمة صيانة من نفس الجهة المصنعة'],
+tip:'اطلب دائماً معاينة وقياساً في موقعك قبل أي عرض سعر. أي عرض يُقدَّم بدون قياس فعلي غالباً ما يتغير سعره لاحقاً.'},
+{h:'مطبخ الألمنيوم: المميزات ولماذا يناسب مناخ الرياض',
+p:['<strong>مطابخ الألمنيوم</strong> من أكثر الخيارات انتشاراً في الرياض، لأنها لا تتأثر بالرطوبة ولا تنتفخ ولا تتعفن، ولا تصلح لها الحشرات مأوى، وهي مناسبة للأجواء الحارة ومع الاستخدام الكثيف والبخار وتنظيف الأسطح بالماء بشكل متكرر.','وتتوفر خزائن الألمنيوم اليوم بألوان وتشطيبات حديثة تحاكي الخشب أو الرخام أو الألوان الغامقة اللامعة، فلم يعد الألمنيوم مرتبطاً بالشكل التقليدي القديم، بل أصبح خياراً عصرياً وأنيقاً.'],
+ul:['مقاوم للرطوبة والبخار والماء','لا يتعرض للنمل الأبيض ولا للتعفن','عمر افتراضي طويل مع صيانة بسيطة','سهل التنظيف ولا يمتص الروائح','تشكيلة ألوان وتشطيبات عصرية'],
+tip:'مطبخ الألمنيوم خيار ممتاز للشقق والمطابخ ذات التهوية المحدودة، وللأسر التي تطبخ كثيراً وتريد خامة عملية تتحمل الاستخدام اليومي.'},
+{h:'مطبخ الخشب: الفخامة الدافئة وأنواع الخامات',
+p:['<strong>مطابخ الخشب</strong> تمنح البيت دفئاً وفخامة يصعب تقليدها، وتتنوع خاماتها بين <strong>MDF</strong> و<strong>HDF</strong> والخشب الطبيعي، مع تشطيبات مثل <strong>البولي لاك</strong> والأكريليك والميلامين. لكل خامة سعرها وعمرها وطريقة العناية بها.','ننصح بالخشب في المطابخ المفتوحة على الصالة أو المطابخ الجيدة التهوية، مع الانتباه إلى الحماية من تسريب المياه حول الحوض والغسالة، لأن الخشب الصناعي لا يحب الرطوبة المستمرة، ولذلك نعزل الحواف والقواعد بدقة.'],
+ul:['خشب MDF بتشطيبات لامعة أو مطفية','خشب HDF أعلى كثافة ومقاومة','دهانات بولي لاك وأكريليك بألوان متعددة','تشطيبات ميلامين اقتصادية وعملية','حواف معزولة ضد الماء عند الحوض'],
+tip:'إن كان مطبخك كبيراً وتريد فخامة الخشب فاجمع بين الخزائن العلوية خشب والسفلية ألمنيوم أو مقاومة للرطوبة، لتحصل على الجمال والعملية معاً.'},
+{h:'المطبخ المودرن وأشكال المطابخ: L وU والجزيرة',
+p:['<strong>المطبخ المودرن</strong> يعتمد على خطوط مستقيمة ونظيفة وألوان هادئة أو متباينة، ومقابض مخفية أو بصيغة (بدون مقبض)، وإضاءة LED تحت الخزائن، مع ترتيب ذكي يجعل كل شيء في متناول اليد. وهو مناسب للفلل والشقق على حد سواء.','أما شكل المطبخ فيحدده المكان: مطبخ <strong>على شكل L</strong> يستغل ركناً واحداً ويترك مساحة للحركة، ومطبخ <strong>على شكل U</strong> يعطيك أكبر مساحة تخزين وعمل، و<strong>مطبخ الجزيرة</strong> يضيف سطحاً مركزياً للأكل والتحضير ويناسب المساحات الواسعة، وللمساحات الصغيرة نصمم <strong>مطبخاً مستقيماً</strong> ذكياً يستغل الارتفاع بالكامل.'],
+ul:['مطبخ L: توازن بين المساحة والحركة','مطبخ U: أقصى سعة تخزين للأسر الكبيرة','مطبخ جزيرة: للمساحات الواسعة والمطابخ المفتوحة','مطبخ صغير للاستوديو والشقق الصغيرة','إضاءة LED ومقابض مخفية ولمسات عصرية']},
+{h:'الأسطح والإكسسوارات: رخام وكوارتز وجرانيت وسوفت كلوز',
+p:['سطح المطبخ (الرخامة) هو أكثر جزء يتعرض للحرارة والسكاكين والبقع. <strong>الجرانيت</strong> قوي ويتحمل الحرارة، و<strong>الكوارتز</strong> غير مسامي وسهل التنظيف بألوان كثيرة، و<strong>الرخام</strong> يعطي فخامة لكنه يحتاج عناية أكثر ضد البقع.','ولا تنسَ الإكسسوارات التي تصنع الفرق في الاستخدام اليومي: <strong>مفصلات وسكك سوفت كلوز</strong> تغلق بهدوء، أدراج عميقة، منظمات للصحون والقدور، وسلال سحب للزوايا، وفتحات للقمامة مخفية.'],
+ul:['كوارتز: مقاوم للبقع وسهل التنظيف','جرانيت: قوي جداً ويتحمل الحرارة','رخام: فخامة وأناقة مع عناية أكبر','سوفت كلوز للأبواب والأدراج','منظمات داخلية وسلال زوايا'],
+tip:'اختر السطح والخزائن في وقت واحد، فبعض الخامات تحتاج تنسيقاً في اللون والملمس وسماكة الحافة لنتيجة نهائية متناسقة.'},
+{h:'خطوات العمل معنا من المعاينة حتى التسليم',
+p:['نلتزم بخطوات واضحة تجعل التجربة مريحة لك: نبدأ بـ<strong>معاينة وقياس مجاني</strong> في موقعك بحي الروابي أو أي حي بالرياض، ثم نقدم <strong>تصميماً ثلاثي الأبعاد</strong> يظهر شكل المطبخ قبل التنفيذ، ثم عرض سعر واضح لا يتغير.','بعد اعتماد التصميم ننتقل إلى التصنيع بخامات مختارة، ثم التركيب بنظافة ودقة، ونسلمك المطبخ مع <strong>ضمان</strong> وخدمة ما بعد البيع، وإن ظهر أي عطل فنحن قريبون منك ونصل بسرعة.'],
+ul:['1) معاينة وقياس مجاني','2) تصميم 3D وتعديل حتى ترضى','3) عرض سعر واضح وثابت','4) تصنيع بخامات مختارة','5) تركيب نظيف وتسليم مع ضمان']},
+{h:'أخطاء شائعة يجب تجنبها عند تفصيل المطبخ',
+p:['أكثر الأخطاء شيوعاً هو اختيار الخامة بناءً على السعر وحده دون النظر لظروف المطبخ (رطوبة، تهوية، استخدام)، أو تجاهل الإضاءة والتمديدات الكهربائية عند التصميم، أو عدم ترك مسافات كافية للحركة وفتح الأجهزة.','وخطأ آخر هو عدم مراجعة تفاصيل الضمان بالكتابة، أو التعاقد مع جهة لا تقدم خدمة صيانة لاحقة. اسأل دائماً: من يصلح المشكلة إن ظهرت بعد سنة؟'],
+ul:['اختيار الخامة بالسعر فقط','إهمال التهوية والرطوبة','عدم حساب مكان الأجهزة والتمديدات','التصميم بدون معاينة فعلية','عدم توثيق الضمان بالكتابة']}
+],
+faq:[
+['ما الفرق بين مطبخ الألمنيوم ومطبخ الخشب؟','الألمنيوم أفضل مقاومة للرطوبة والحشرات وعمره طويل مع صيانة أقل، والخشب يعطي مظهراً أدفأ وفخامة ويحتاج عناية أكبر ضد الماء. ونساعدك في اختيار الأنسب لمطبخك بعد المعاينة.'],
+['هل المعاينة والتصميم مجانيان فعلاً؟','نعم، المعاينة والقياس والتصميم ثلاثي الأبعاد مجانية داخل حي الروابي وأحياء الرياض دون أي التزام.'],
+['كم تستغرق مدة تفصيل وتركيب المطبخ؟','تختلف حسب الحجم والخامة، لكننا نحدد لك مدة واضحة عند الاتفاق ونلتزم بها، مع تركيب نظيف وتسليم في الموعد.'],
+['هل تقدمون صيانة للمطابخ بعد التركيب؟','بالطبع، نقدم ضماناً وخدمة صيانة تشمل تبديل المفصلات والأدراج والرفوف وتلميع وتغيير أبواب الخزائن.'],
+['هل يمكن تفصيل مطبخ صغير للشقق؟','نعم، نصمم مطابخ صغيرة ذكية تستغل الارتفاع والزوايا بالكامل وتوفر تخزيناً كبيراً في مساحة محدودة.']
+],
+tags:['مطابخ حي الروابي','تفصيل مطابخ الرياض','مطابخ ألمنيوم','مطابخ خشب','مطابخ مودرن','مطبخ L','مطبخ جزيرة','رخام وكوارتز','سوفت كلوز','أفضل شركة مطابخ في الرياض','صيانة مطابخ','معاينة مجانية']
+},
+
+2:{
+cat:'أبواب ودرايش',icon:'🚪',date:'22 سبتمبر 2026',read:'9 دقائق',
+title:'الأبواب والدرايش: كيف تجمع بين الأمان والشكل الجميل لبيتك؟',
+desc:'دليل عملي لاختيار أبواب الخشب والألمنيوم والحديد ودرايش الشبابيك والشرفات ودرابزين السلالم في الرياض، مع أسرار الدهان الفرن والحماية من الصدأ والصيانة.',
+alt:'أبواب خشب وحديد ودرايش سلالم وشبابيك في الرياض',
+intro:'الباب والدرايش هما خط الدفاع الأول لبيتك، وفي الوقت نفسه هما من أول ما يراه الزائر. لذلك يجب أن يجمعا بين <strong>القوة والأمان</strong> و<strong>الشكل الجميل</strong>. في هذا المقال نأخذك في جولة كاملة حول <strong>الأبواب الخشب والألمنيوم والحديد</strong>، و<strong>درايش الشبابيك والشرفات والسلالم</strong>، وكيف تختار الأنسب لبيتك في الرياض، من واقع خبرة <strong>مطابخ ودرايش الروابي</strong>.',
+s:[
+{h:'أنواع الأبواب: خشب وألمنيوم وحديد',
+p:['<strong>أبواب الخشب</strong> هي الأنسب لغرف النوم والصالات الداخلية لأنها تعطي دفئاً ونقوشاً أنيقة وعزلاً جيداً للصوت. و<strong>أبواب الألمنيوم</strong> خفيفة ولا تصدأ، وهي الخيار الأمثل للحمامات والمطابخ والأماكن الرطبة. أما <strong>أبواب الحديد</strong> فهي الأقوى، وتُستخدم لمداخل الفلل والمحلات والمخازن.','اختيار النوع يعتمد على مكان الباب ودرجة التعرض للشمس والرطوبة ومستوى الأمان المطلوب، وليس على الشكل وحده.'],
+ul:['خشب: للغرف الداخلية، عزل صوت وأناقة','ألمنيوم: للحمامات والمطابخ، مقاوم للماء والصدأ','حديد: للمداخل الخارجية، أعلى مستوى أمان','أبواب سحّاب ولايت للشرفات والمداخل الجانبية']},
+{h:'باب المدخل الرئيسي: الأمان أولاً',
+p:['باب المدخل يجب أن يكون متيناً ويتحمل الشمس والغبار والأمطار. ننصح بـ<strong>الحديد المجلفن</strong> بسماكة مناسبة مع إطار قوي، وأقفال متعددة النقاط، ومفصلات ثقيلة تمنع الترهل مع مرور السنين، ويمكن تشطيبه بنقوش حديدية أو تكسية خشبية للمظهر الفاخر.','لا تهمل تفاصيل التركيب، فالباب القوي لا قيمة له إذا ركّب بإطار ضعيف أو تثبيت غير محكم في الجدار. نحن نثبته بإحكام وبدون تكسير مبالغ فيه ونعيد التشطيب بنظافة.'],
+ul:['حديد مجلفن مقاوم للصدأ','أقفال أمان متعددة النقاط','مفصلات ثقيلة تتحمل الوزن','عزل جيد للحرارة والصوت','تركيب محكم مع إعادة تشطيب نظيف'],
+tip:'تأكد من فتحة العين السحرية أو الكاميرا، وفكّر في ارتفاع الباب وعرضه بما يسمح بإدخال الأثاث الكبير مستقبلاً.'},
+{h:'أبواب الحمامات والمطابخ والغرف الداخلية',
+p:['الأماكن الرطبة تحتاج خامة لا تتأثر بالماء، ولذلك نوصي بـ<strong>أبواب الألمنيوم</strong> للحمامات والمطابخ، فهي لا تنتفخ ولا تتشقق، وتوفر تهوية عند الحاجة بشرائح أو زجاج مناسب. أما الغرف الداخلية فالخشب يمنحها خصوصية وهدوءاً.','ويمكن تفصيل الأبواب بأي مقاس أو تصميم، من الكلاسيك المنقوش إلى المودرن المسطح بألوان متناسقة مع الأرضيات والأثاث.'],
+ul:['ألمنيوم للحمامات: لا يتأثر بالماء','خشب للغرف: عزل صوتي وشكل فاخر','تصاميم مودرن وكلاسيك حسب الذوق','تفصيل بأي مقاس غير قياسي','مقابض وأقفال بتشطيبات متنوعة']},
+{h:'درايش الشبابيك والشرفات: حماية بلا تشويه',
+p:['<strong>درايش الحديد</strong> تحمي شبابيك الفلل والشقق والشرفات، وتمنح أماناً للأطفال، وفي الوقت نفسه تضيف طابعاً جمالياً إن صُممت جيداً. نصنعها بأشكال <strong>مودرن</strong> بخطوط بسيطة أو <strong>كلاسيك</strong> بأشغال يدوية، مع مراعاة أن تكون مسافات الحماية آمنة للأطفال.','وتوجد أيضاً <strong>درايش الألمنيوم</strong> الخفيفة المقاومة للصدأ لمن يفضل وزناً أقل وشكلاً عصرياً.'],
+ul:['درايش شبابيك وشرفات وأسطح','تصاميم مودرن وكلاسيك وأشغال يدوية','مسافات آمنة للأطفال','درايش ألمنيوم خفيفة ومقاومة للصدأ','لحام دقيق وتشطيب ناعم بلا نتوءات'],
+tip:'اختر تصميم الدرايش بحيث يسمح بالتهوية والنظافة السهلة، وتجنب التفاصيل المعقدة جداً التي تجمع الغبار.'},
+{h:'درابزين السلالم: أمان وأناقة في آن واحد',
+p:['<strong>درابزين السلالم</strong> عنصر أمان أساسي، وفي الوقت نفسه قطعة ديكور رئيسية في الصالة. نصنعه من الحديد أو الحديد مع الزجاج أو الخشب، بأشكال معاصرة تعطي إحساساً بالاتساع.','نراعي ارتفاعاً آمناً للحاجز، ومسافات بين القضبان تناسب وجود الأطفال، وتثبيتاً متيناً في الأرض والحائط، لأن الدرابزين يتحمل أحمالاً وضغوطاً يومية.'],
+ul:['حديد مع تشطيبات مودرن أو كلاسيك','حديد وزجاج لمظهر عصري واسع','ارتفاع ومسافات آمنة للأطفال','تثبيت قوي في الأرضية والجدار','ألوان متناسقة مع ديكور البيت']},
+{h:'الدهان الفرن: سر بقاء الحديد لسنوات',
+p:['الرياض مدينة حارة ومغبرة، ولذلك فالحديد المعرّض للشمس يحتاج حماية حقيقية. نستخدم حديداً مجلفناً وطبقة أساس مضادة للصدأ، ثم <strong>دهان فرن</strong> يتحمل الحرارة والغبار والتغيرات الجوية، فيبقى لونه ثابتاً ولا يتقشر بسهولة.','الدهان العادي الرخيص قد يبدو جيداً في البداية لكنه يتقشر بعد مواسم قليلة، أما الدهان الفرن فاستثمار يوفر عليك إعادة الدهان والصيانة.'],
+ul:['حديد مجلفن كقاعدة','طبقة أساس مضادة للصدأ','دهان فرن مقاوم للشمس والغبار','ألوان ثابتة وتشطيب موحد','تقليل الحاجة لإعادة الدهان']},
+{h:'الصيانة الدورية للأبواب والدرايش',
+p:['حتى أفضل الأبواب تحتاج عناية بسيطة: تشحيم المفصلات، وفحص الأقفال، ومسح الغبار، وإصلاح أي خدش في الدهان قبل أن يبدأ الصدأ. وننفذ <strong>صيانة الأبواب</strong> وتبديل الأقفال وتعديل الأبواب المنحرفة أو التي لا تُغلق جيداً.','ولو لاحظت صوت احتكاك أو صعوبة في الإغلاق أو بداية صدأ في الدرايش فلا تؤجل الإصلاح، فالصيانة المبكرة أرخص بكثير من التغيير.'],
+ul:['تشحيم المفصلات والعجلات دورياً','فحص وتبديل الأقفال المهترئة','معالجة الخدوش وبدايات الصدأ','تعديل الأبواب المنحرفة','ضمان على الصيانة وقطع الغيار']}
+],
+faq:[
+['ما أفضل نوع باب لمدخل الفيلا؟','الحديد المجلفن بدهان فرن مع أقفال أمان متعددة النقاط، ويمكن تكسيته بالخشب أو النقوش الحديدية للمظهر الفاخر.'],
+['هل أبواب الألمنيوم مناسبة للحمامات؟','نعم، هي الخيار الأفضل للحمامات والمطابخ لأنها لا تتأثر بالماء ولا الرطوبة ولا تصدأ.'],
+['هل الدرايش آمنة للأطفال؟','نصممها بمسافات آمنة بين القضبان وثبات قوي، ونراعي عدم وجود فتحات يمكن للطفل تجاوزها أو حواف حادة.'],
+['كم يعيش الدهان الفرن؟','مع حديد مجلفن وتحضير جيد يعيش لسنوات طويلة أطول بكثير من الدهان العادي في ظروف حرارة وغبار الرياض.'],
+['هل تفصلون الأبواب بمقاسات خاصة؟','نعم، نصنع الأبواب بالمقاس والتصميم المطلوبين، ونركبها بدقة داخل الفتحة.']
+],
+tags:['أبواب خشب','أبواب ألمنيوم','أبواب حديد','أبواب فلل','أبواب حمامات','درايش حديد','درايش ألمنيوم','درايش شبابيك','درابزين سلالم','دهان فرن','حداد الرياض','صيانة أبواب']
+},
+
+3:{
+cat:'ليكسان وزجاج',icon:'☀️',date:'28 سبتمبر 2026',read:'9 دقائق',
+title:'الليكسان والزجاج: مظلات وفواصل تجمع بين الجمال والعزل',
+desc:'كل ما تحتاج معرفته عن الليكسان المضلع والمصمت ومظلات السيارات والبرجولات، والفرق بين الزجاج السكريت والمزدوج، وفواصل الشاور والمكاتب والمرايا والعناية بها في الرياض.',
+alt:'مظلات ليكسان وزجاج سكريت وفواصل شاور في الرياض',
+intro:'الليكسان والزجاج من أكثر الخامات التي تغيّر شكل المكان وتحسّن حياتك اليومية: مظلة تحمي سيارتك من الشمس، وبرجولة تجمع الأسرة في الحديقة، وفاصل شاور أنيق، وواجهة زجاجية تعطي المحل مظهراً راقياً. في هذا المقال نشرح <strong>الليكسان بأنواعه</strong> و<strong>الزجاج السكريت والمزدوج</strong> و<strong>فواصل الشاور والمكاتب والمرايا</strong>، وكيف تختار وتعتني بها في الرياض، مع فريق <strong>مطابخ ودرايش الروابي</strong>.',
+s:[
+{h:'ما هو الليكسان وما أنواعه؟',
+p:['<strong>الليكسان</strong> ألواح بلاستيكية متينة خفيفة الوزن، تتحمل الحرارة والأمطار وتحجب جزءاً كبيراً من الأشعة الضارة. يتوفر بأنواع أشهرها <strong>الليكسان المضلع</strong> الأقوى والأنسب للأسقف الكبيرة، و<strong>الليكسان المصمت</strong> الأملس بشكله الأنيق، والشفاف أو الملون حسب مقدار الإضاءة والخصوصية المطلوبين.','ميزته الكبرى أنه أخف من الزجاج بكثير، ولا ينكسر بسهولة، ويسهل تشكيله وتركيبه على هياكل مختلفة.'],
+ul:['ليكسان مضلع للأسقف الكبيرة والمظلات','ليكسان مصمت أملس للمظهر الأنيق','شفاف أو ملون أو دخاني حسب الإضاءة','خفيف وقوي ويتحمل الأمطار والحرارة','يحجب الأشعة الضارة ويوفر ظلاً مريحاً']},
+{h:'مظلات السيارات والبرجولات والأسقف',
+p:['<strong>مظلات السيارات</strong> تحمي السيارة من الشمس الحارقة والغبار، وتحافظ على دهانها وداخلها. ننفذها بمقاسات لسيارة واحدة أو أكثر، بأشكال مسطحة أو مقوسة حسب المساحة والتصميم.','أما <strong>البرجولات</strong> والأسقف في الحدائق والاستراحات والمداخل فتحول المكان إلى جلسة مظللة مريحة، ويمكن دمج الليكسان مع الإضاءة والستائر لتحصل على مساحة معيشة إضافية.'],
+ul:['مظلات سيارات بمقاسات مختلفة','برجولات حدائق واستراحات','أسقف مداخل وممرات','سواتر وفواصل ليكسان','إمكانية إضافة إضاءة وستائر'],
+tip:'حدّد اتجاه الشمس والرياح قبل التصميم، فمظلة مصممة بميلان صحيح تصرّف مياه الأمطار بسرعة وتحمي من التسريب.'},
+{h:'الهيكل الحديدي والتثبيت: أساس المظلة',
+p:['قوة المظلة لا تعتمد على الليكسان وحده بل على <strong>الهيكل الحديدي</strong> الذي يحمله. نستخدم قطاعات حديد مناسبة للمسافات والأحمال، ونلحمها بدقة ونعالجها بطبقة أساس ثم <strong>دهان مقاوم للصدأ</strong>، لأن التعرض المستمر للشمس والرطوبة يهاجم الحديد غير المحمي.','والتثبيت المحكم بين الألواح والهيكل بمسامير وجوانات مناسبة يمنع التسريب ويقلل الاهتزاز والضجيج أثناء الرياح والأمطار.'],
+ul:['قطاعات حديد مناسبة للمسافات والأحمال','لحام دقيق وأساس مضاد للصدأ','دهان مقاوم للشمس والغبار','تثبيت محكم بجوانات مانعة للتسريب','ميل مناسب لتصريف مياه الأمطار']},
+{h:'الزجاج السكريت: الأمان والجمال',
+p:['<strong>الزجاج السكريت</strong> (المقوّى) يُعالج بالحرارة ليصبح أقوى بعدة مرات من الزجاج العادي، وإن انكسر تحطم إلى قطع صغيرة أقل خطورة. ولذلك يُستخدم في الأبواب والنوافذ والحمامات وفواصل الشاور والواجهات والدرابزين.','ويتوفر شفافاً أو مصنفراً أو ملوناً أو عاكساً، مع إمكانية القص بالمقاس الدقيق والتركيب بإطارات ألمنيوم أو بدونها حسب التصميم.'],
+ul:['أقوى من الزجاج العادي بعدة أضعاف','أكثر أماناً عند الكسر','شفاف أو مصنفر أو ملون أو عاكس','مناسب للأبواب والنوافذ والدشات','قص بمقاسات دقيقة وتركيب احترافي']},
+{h:'الزجاج المزدوج: عزل للحرارة والصوت',
+p:['<strong>الزجاج المزدوج</strong> يتكون من طبقتين بينهما فراغ عازل، فيقلل انتقال الحرارة والضجيج، وهو مفيد جداً في مناخ الرياض لتخفيف حِمل المكيفات وتوفير الكهرباء، وكذلك للمحلات والمكاتب المطلة على شوارع مزدحمة.','ويقلل التكاثف على الزجاج ويعطي راحة أكبر داخل المكان، خاصة في الواجهات الكبيرة المعرضة للشمس المباشرة.'],
+ul:['عزل حراري يخفف حمل التكييف','عزل صوتي عن ضجيج الشارع','تقليل التكاثف والرطوبة','مناسب للواجهات والمكاتب والمحلات','راحة أكبر وتوفير في الكهرباء'],
+tip:'اختر الزجاج المزدوج للجهات الغربية والجنوبية المعرضة للشمس، فهي أكثر الجهات التي تستفيد من العزل.'},
+{h:'فواصل الشاور والمكاتب والمرايا والواجهات',
+p:['<strong>فواصل الشاور الزجاجية</strong> تمنع تناثر الماء وتجعل الحمام أنيقاً وأوسع بصرياً، ويمكن أن تكون ثابتة أو بابين سحاب أو بباب مفصلي. و<strong>فواصل المكاتب</strong> الزجاجية توفر الخصوصية مع إضاءة طبيعية ومظهر احترافي.','أما <strong>المرايا</strong> فهي ديكور يكبّر المكان ويزيد الإضاءة، ونركبها بمقاسات مخصصة بإطارات أو بدونها، وكذلك <strong>واجهات المحلات الزجاجية</strong> التي تجذب العملاء وتعطي المحل شكلاً راقياً.'],
+ul:['فواصل شاور ثابتة أو سحاب أو مفصلية','فواصل مكاتب زجاجية بخصوصية وإضاءة','مرايا ديكور بمقاسات مخصصة','واجهات محلات زجاجية أنيقة','سيليكون وإطارات عالية الجودة']},
+{h:'العناية بالليكسان والزجاج والصيانة',
+p:['ينظف الليكسان بماء وصابون خفيف وقطعة قماش ناعمة، مع تجنب المواد الكاشطة والمذيبات القوية التي تخدش سطحه أو تعكّره. وينظف الزجاج بمنظف مخصص ومنشفة نظيفة، ويُراجع السيليكون حول الفواصل مرة كل فترة لتفادي التسريب.','ونقدم <strong>تغيير الزجاج المكسور</strong> بسرعة، وتبديل ألواح الليكسان التالفة، وصيانة الهياكل الحديدية وإعادة دهانها، وكل ذلك بضمان على التركيب وقطع الغيار.'],
+ul:['ماء وصابون خفيف للتنظيف','تجنب المواد الكاشطة والمذيبات','مراجعة السيليكون حول الفواصل','تغيير الزجاج المكسور بسرعة','صيانة الهياكل الحديدية وإعادة الدهان']}
+],
+faq:[
+['ما الفرق بين الليكسان المضلع والمصمت؟','المضلع أقوى وأنسب للأسقف الكبيرة والمظلات، والمصمت أملس بشكل أنيق ويناسب الأسقف والفواصل التي تحتاج مظهراً ناعماً.'],
+['هل الليكسان يتحمل حرارة الرياض؟','نعم، ليكسان الجودة العالية يتحمل الحرارة والأمطار ويحجب جزءاً من الأشعة، مع تثبيت وهيكل حديد مناسبين.'],
+['ما الفرق بين الزجاج السكريت والمزدوج؟','السكريت مقوّى للأمان والقوة، والمزدوج طبقتان للعزل الحراري والصوتي، وقد يجتمعان حسب الحاجة.'],
+['هل تنفذون فواصل شاور بمقاس خاص؟','نعم، نقص الزجاج بالمقاس الدقيق ونركبه بسيليكون وإطارات عالية الجودة مع ضمان على التركيب.'],
+['هل تغيرون الزجاج المكسور بسرعة؟','نعم، فريقنا قريب في حي الروابي ويصل بسرعة لتغيير الزجاج المكسور أو المتضرر.']
+],
+tags:['ليكسان','ليكسان مضلع','مظلات ليكسان','مظلات سيارات','برجولات','زجاج سكريت','زجاج مزدوج','فواصل شاور','فواصل مكاتب','مرايا','واجهات زجاج','تغيير زجاج']
+}
+};
+
+var id=new URLSearchParams(location.search).get('id');
+if(!D[id])id='1';
+var a=D[id];
+document.title=a.title+' | مطابخ ودرايش الروابي';
+var md=document.querySelector('meta[name="description"]');
+if(md)md.setAttribute('content',a.desc);
+
+var toc='',body='';
+a.s.forEach(function(s,i){
+var n=i+1;
+toc+='<a href="#s'+n+'"><b>'+n+'</b><span>'+s.h+'</span></a>';
+body+='<section class="asec" id="s'+n+'"><h2><i>'+n+'</i>'+s.h+'</h2>'
++s.p.map(function(p){return '<p>'+p+'</p>'}).join('')
++(s.ul?'<ul class="alist">'+s.ul.map(function(l){return '<li>'+l+'</li>'}).join('')+'</ul>':'')
++(s.tip?'<div class="atip"><b>💡 نصيحة من الخبراء</b><p>'+s.tip+'</p></div>':'')
++'</section>';
+});
+
+var faq='<div class="afaq"><h2>❓ أسئلة شائعة</h2>'+a.faq.map(function(f){return '<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>'}).join('')+'</div>';
+var tags='<div class="atags"><b>🔎 كلمات ذات صلة</b>'+a.tags.map(function(t){return '<span>'+t+'</span>'}).join('')+'</div>';
+
+var rel='';
+Object.keys(D).forEach(function(k){
+if(k===id)return;
+var r=D[k];
+rel+='<a class="rel" href="article.html?id='+k+'"><i>'+r.icon+'</i><div><small>'+r.cat+'</small><h3>'+r.title+'</h3></div></a>';
+});
+
+document.getElementById('app').innerHTML=
+'<section class="ahero"><span class="orb o1"></span><span class="orb o2"></span><div class="ahin">'
++'<span class="acat">'+a.icon+' '+a.cat+'</span>'
++'<h1>'+a.title+'</h1>'
++'<p class="adesc">'+a.desc+'</p>'
++'<div class="ameta"><span>📅 '+a.date+'</span><span>⏱ '+a.read+' قراءة</span><span>✍ فريق مطابخ ودرايش الروابي</span></div>'
++'</div></section>'
++'<div class="awrap">'
++'<div class="acover"><span>'+a.icon+'</span><img src="images/blog/'+id+'.jpg" alt="'+a.alt+'" onerror="this.style.display=\'none\'"></div>'
++'<div class="agrid">'
++'<article class="abody"><p class="alead">'+a.intro+'</p>'+body+faq+tags+'</article>'
++'<aside class="aside">'
++'<div class="acard"><h3>📑 محتوى المقال</h3><nav class="atoc">'+toc+'</nav></div>'
++'<div class="acard acontact"><h3>عندك مشروع؟</h3><p>معاينة وقياس مجاني وعرض سعر واضح وضمان حقيقي في حي الروابي وكل أحياء الرياض.</p><a class="abtn" href="tel:+966591007651">اتصل الآن <span dir="ltr">0591007651</span></a></div>'
++'</aside></div>'
++'<div class="arel"><h2>اقرأ أيضاً</h2><div class="relgrid">'+rel+'</div></div>'
++'<div class="acta"><h2>جاهز نبدأ مشروعك؟</h2><p>كلمنا الآن واحصل على معاينة وقياس مجاني وعرض سعر لا يتغير.</p><a class="abtn" href="tel:+966591007651">اتصل الآن <span dir="ltr">0591007651</span></a></div>'
++'</div>';
+
+var prog=document.getElementById('prog');
+function pr(){
+var h=document.documentElement.scrollHeight-window.innerHeight;
+prog.style.width=(h>0?Math.min(window.scrollY/h*100,100):0)+'%';
+}
+window.addEventListener('scroll',pr,{passive:true});
+pr();
+})();
+</script>
+</body>
+</html>
